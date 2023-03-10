@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*contents*/
+.contents{width:660px; overflow:hidden; margin:150px auto;}
+.contents h1{font-size:36px;text-align:center;}
+.contents .line1{width:660px; height:3px; background:black; margin-top:10px;}
+
+.contents .cont1{margin-top:66px;}
+.contents .cont1 table{width:800px; border-collapse: collapse; color:#333;}
+.contents .cont1 table,.contents .cont1 table th,.contents .cont1 table td{}
+.contents .cont1 table th,.contents .cont1 table td{padding:10px; box-sizing:border-box;}
+.contents .cont1 table th{border-bottom: 1px solid #fff;width: 115px; text-align:left;padding-left: 5px;}
+.contents .cont1 table .star{font-size:15px bold;}
+.contents .cont1 table td{border-bottom: 1px solid #eee; padding: 25px 20px;}
+
+.contents .cont1 table td .btn1{width:60px;height:25px;background:#6f6f70;border:none;font-size: 11px;cursor:pointer;position:relative;top:1px;color:#fff;}
+
+.contents .chk{position:relative; top:2px;}
+.contents .cont1 .form0 {text-align: right;}
+.contents .cont1 table td .form1{width:172px;height:25px;border:1px solid #a9a9a9;padding: 0 6px; box-sizing: border-box;font-size: 12px;}
+.contents .cont1 .form2{width:64px; height:24px; border:1px solid #a9a9a9; font-size:12px; box-sizing: border-box;padding:0 5px; color:#fff;}
+.contents .cont1 .form3{width:180px; height:24px; border:1px solid #a9a9a9; font-size:12px; box-sizing: border-box;padding:0 5px; color:#fff; margin-top:10px;}
+.contents .cont1 .form4{width:244px; height:24px; border:1px solid #a9a9a9; font-size:12px; box-sizing: border-box;padding:0 5px; color:#fff; margin-top:10px;}
+
+.contents .cont1 .chk_td input{margin-right:5px;}
+.contents .cont1 .chk_td span{color:#ccc;margin:0 30px;}
+.contents .cont1 .chk_td{position:relative;top:2px;}
+
+.contents .join2_btn{margin-top:30px;text-align:center;}
+.contents .join2_btn input{width:100px;height:30px;background:#6f6f70;color:#fff;font-size:15px;border:none;transition: all 0.5s;cursor: pointer;}
+.contents .join2_btn input:hover{background:#888;}
+
+
+/*ckc box1-2*/
+.chk_td input[type="checkbox"]{display:none;} /*실제 체크박스 없애기*/
+.chk_td input[type="checkbox"] + label::before{content:'';display:inline-block;width:10px;height:10px;vertical-align:middle;margin: -2px 5px 0 0;border:1px solid #6f6f70; cursor:pointer;border-radius: 50%;}/* 가짜 체크박스 만들기*/
+.chk_td input[type="checkbox"]:checked + label::before{background:url(../checked_box.jpg) no-repeat center;}/* 가짜 체크박스 체크했을 때 */
+.chk_td input[type="checkbox"]+label span{cursor:pointer;}

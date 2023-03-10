@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*contents*/
+.contents{width:660px; overflow:hidden; margin:150px auto;}
+.contents h1{font-size:36px;text-align:center;}
+.contents .line1{width:660px; height:3px; background:black; margin-top:10px;}
+
+.contents .txt1{margin-top:20px;font-weight:bold;}
+.contents .txt1 span{float:right;}
+
+.contents .cont1{width:660px;height:290px;overflow:auto;background:#eee;border:1px solid #ccc; padding:20px 20px;box-sizing: border-box;margin-top:25px;}
+
+.contents .txt2{margin-top:50px;font-weight:bold;}
+.contents .txt2 span{float:right;}
+
+.contents .cont2{width:660px;height:270px;overflow: auto;background:#eee;border:1px solid #ccc;padding:20px 20px;box-sizing: border-box;margin-top:25px;}
+
+.contents .join1_btn{margin-top:30px;text-align:center;}
+.contents .join1_btn input{width:100px;height:30px;background:#6f6f70;color:#fff;font-size:15px;border:none;transition: all 0.5s;cursor: pointer;}
+.contents .join1_btn input:hover{background:#888;}
+
+.contents .chk{position:relative;top:2px;}
+
+/*ckc box1-2*/
+.txt1 input[type="checkbox"]{display:none;} /*실제 체크박스 없애기*/
+.txt1 input[type="checkbox"] + label::before{content:'';display:inline-block;width:10px;height:10px;vertical-align:middle;margin: -2px 5px 0 0;border:1px solid #6f6f70; cursor:pointer;border-radius: 50%;}/* 가짜 체크박스 만들기*/
+.txt1 input[type="checkbox"]:checked + label::before{background:url(../checked_box.jpg) no-repeat center;}/* 가짜 체크박스 체크했을 때 */
+.txt1 input[type="checkbox"]+label span{cursor:pointer;}
+
+.txt2 input[type="checkbox"]{display:none;} /*실제 체크박스 없애기*/
+.txt2 input[type="checkbox"] + label::before{content:'';display:inline-block;width:10px;height:10px;vertical-align:middle;margin: -2px 5px 0 0;border:1px solid #6f6f70; cursor:pointer;border-radius: 50%;}/* 가짜 체크박스 만들기*/
+.txt2 input[type="checkbox"]:checked + label::before{background:url(../checked_box.jpg) no-repeat center;}/* 가짜 체크박스 체크했을 때 */
+.txt2 input[type="checkbox"]+label span{cursor:pointer;}
